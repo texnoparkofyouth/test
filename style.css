@@ -1,0 +1,648 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("./fonts/DM_Sans/DMSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Rosario";
+    src: url("./fonts/Rosario/static/Rosario-Regular.ttf");
+}
+
+
+@keyframes ellipsAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+p,
+h1,
+h2 {
+    margin: 0;
+}
+
+
+body {
+    margin: 0;
+}
+
+.basketIcon::before {
+    content: url("./images/Buy.png");
+}
+
+.chevron-right::before {
+    content: url("./images/Arrow\ 6.png");
+}
+
+.userIcon::before {
+    content: url("./images/user\ 1.png");
+}
+
+.starIcon::before {
+    content: url("./images/star\ 7.png");
+}
+
+.deliveryIcon::before {
+    content: url("./images/delivery-man\ 2.png");
+}
+
+.orderIcon::before {
+    content: url("./images/shopping\ 1.png");
+}
+
+.fastIcon::before {
+    content: url("./images/fast-time\ 1.png");
+}
+
+
+
+.harvestIcon::before {
+    content: url("./images/harvest\ 1.png");
+}
+
+
+i.star2Icon::before {
+    content: url("./images/starFull.png");
+}
+
+
+i.star2HalfIcon::before {
+    content: url("./images/starHalf.png");
+}
+
+
+i.iconFacebook{
+    content: url("./images/facebook\ 1.svg");
+}
+
+
+i.iconTwitter{
+    content: url("./images/twitter\ 1.svg");
+}
+
+
+i.iconInstagram{
+    content: url("./images/instagram\ 1.svg");
+}
+
+
+
+
+nav {
+    width: 90%;
+    margin-top: 7px;
+    padding: 43px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 40px;
+    flex-grow: 3.5;
+}
+
+.links li a {
+    text-align: center;
+    color: #222;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+
+.registr {
+    flex-grow: 3.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.btn-registr {
+    margin-left: 12px;
+    border-radius: 8px;
+    background: #09A66D;
+    padding: 10px 23px;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+}
+
+
+.naviItem {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+}
+
+
+.searchIcon {
+    background-image: url("./images/Search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.showcase {
+    position: relative;
+    width: 100%;
+    min-height: 850px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10%;
+    box-sizing: border-box;
+    background: #F3FBF8 url("./images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview\ 1.png");
+    background-repeat: no-repeat;
+}
+
+.blockInfo h1,
+.blockInfo h2 {
+    color: #222;
+    font-family: Rosario;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+.blockInfo p {
+    max-width: 637px;
+    width: 90%;
+    text-align: center;
+    color: #555;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.blockInfo button {
+    width: auto;
+    display: block;
+    color: #222;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 23px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: none;
+}
+
+.blockInfo button i {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #09A66D;
+}
+
+.cards {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cards p {
+    line-height: unset;
+}
+
+.cards .card {
+    display: flex;
+    width: 250px;
+    height: 116px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+.cards .card .icon {
+    flex-grow: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards .card .icon i {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+}
+
+
+.cards .card .title {
+    color: #000;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+
+.cards .card p.info {
+    color: #000;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+.cards .card .info {
+    flex-grow: 2;
+}
+
+
+.about {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url("./images/linew.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    justify-content: center;
+    padding: 140px 0;
+}
+
+.about .left {
+    width: 50%;
+}
+
+
+.about .right {
+    width: 40%;
+}
+
+
+.about .left h2 {
+
+    color: #222;
+    font-family: Rosario;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+
+.about .left p {
+    width: 90%;
+    color: #555;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+.cardsAbout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+.cardAbout {
+    width: 500px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.35s;
+}
+
+.cardAbout:hover {
+    background-color: #F3FBF8;
+}
+
+.cardAbout:hover .cardIcon i {
+    background-color: #fff;
+}
+
+
+.cardAbout .cardIcon {
+    width: 20%;
+}
+
+.cardAbout .cardIcon i {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    transition: all 0.35s;
+}
+
+.cardAbout .cardInfo {
+    width: 70%;
+}
+
+.about .right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.about .right .animation {
+    width: 600px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 600px;
+    border-radius: 50%;
+    background-size: contain;
+    background-image: url("./images/Ellipse.png");
+    animation: ellipsAnimation 4s linear infinite;
+}
+
+.about .right .animation img {
+    width: 100%;
+}
+
+.specialItem {
+    padding: 83px 0;
+
+    background-color: rgba(9, 166, 109, 0.05);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-image: url("./images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview\ 1.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.specialItem .right {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.specialItem .left img {
+    width: 600px;
+    height: 600px;
+}
+
+.specialItem .left {
+    width: 45%;
+    padding-bottom: 60px;
+
+}
+
+.specialItem .right h2 {
+    max-width: 556px;
+}
+
+
+
+.specialItem .right p {
+    text-align: left;
+}
+
+
+
+.testiominals {
+    display: flex;
+    justify-content: center;
+    padding: 96px 0;
+}
+
+.testiominals .left,
+.testiominals .right {
+    width: 45%;
+}
+
+.testiominals .left h2 {
+    max-width: 640px;
+}
+
+.testiominals .left p {
+    text-align: left;
+}
+
+
+
+.testiominals .left .profile {
+    margin-top: 40px;
+}
+
+
+.testiominals .left .profile .icons {
+    display: flex;
+    gap: 5px;
+}
+
+
+
+.testiominals .right {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+
+.testiominals .right .friend {
+    position: absolute;
+    bottom: 15px;
+    left: 100px;
+    border-radius: 10px;
+    box-shadow: -15px 15px 25px 0px rgba(4, 119, 39, 0.14);
+
+}
+
+
+.download {
+    display: flex;
+    justify-content: center;
+}
+
+.download .left {
+    width: 30%;
+    min-height: 500px;
+
+    display: flex;
+
+    position: relative;
+}
+
+
+.download .left img {
+    max-width: 100%;
+}
+
+
+.download .left .block {
+    width: 280px;
+    min-height: 500px;
+    position: relative;
+    border: 1px solid red;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.download .left img:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.download .right {
+    width: 50%;
+    max-height: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+
+.download .right p {
+    text-align: left;
+}
+
+
+.downloadlinks {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.download .right button {
+    border-radius: 50px;
+    background: #F3FBF8;
+    padding: 11px 24px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 66px 0;
+    margin-top: 100px;
+    border: 1px solid red;
+    background: #FCFEFD;
+}
+
+
+footer .logo {
+    width: 30%;
+}
+
+footer .logo img {
+    margin-bottom: 30px;
+}
+
+
+footer .logo p {
+    width: 80%;
+}
+
+
+
+footer dl {
+    width: 20%;
+    padding: 0;
+}
+
+footer dl dt {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #222;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+footer dl dd {
+    margin: 12px 0;
+}
+
+
+
+footer p,
+footer a {
+    color: #555;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+
+footer .icons{
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
